@@ -1,0 +1,88 @@
+*{
+  box-sizing: border-box;
+}
+:root{
+  --fontColor: rgb(0, 0, 0);
+  --darkPink: rgb(193, 76, 169);
+  --lightPink: rgb(248, 154, 181);
+  --secondPink: rgb(245, 180, 198);
+  --backgroundPink: rgb(255, 230, 237);
+}
+
+body{
+  background-color: var(--backgroundPink);
+  background-image: url(.././img/background-image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'montserrat', sans-serif;
+  color: var(--fontColor);
+}
+.container{
+  margin-top: 5.2rem;
+}
+.border-card{
+  border: 0.3rem solid var(--secondPink);
+  border-radius: 0.62rem;
+}
+
+.title-card{
+  font-family: 'Mansalva', cursive;
+  color: var(--darkPink);
+}
+
+.button-card{
+  background-color: var(--lightPink);
+  color: var(--darkPink);
+  font-weight: bold;
+}
+
+.knowledge{
+  width: 100%;
+  height: 110vh;
+  background-color: rgb(255,255,255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.knowledge-text, 
+.knowledge-grid, 
+.knowledge-item{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.knowledge-grid{
+  margin: 0.62rem;
+}
+.knowledge-item-row{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.knowledge-item{
+  width: 9.5%;
+  height: 16vh;
+  background-color: transparent;
+  /* box-shadow: 0.5px 0.5px 5px rgba(193, 76, 170, 0.459); */
+  margin: 0.5rem;
+  border-radius: 50%;
+}
+.knowledge-item:hover{
+  border-radius: 50%;
+  border: 3px solid var(--lightPink);
+  color: var(--lightPink);
+}
+
+.knowledge-icon{
+  font-size: 2em;
+  margin-top: 1.5rem;
+}
+.icon-title{
+  font-size: 0.8em;
+  font-weight:bold;
+  margin-top: 0.8rem;
+}
